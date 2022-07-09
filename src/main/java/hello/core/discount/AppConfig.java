@@ -36,7 +36,8 @@ public class AppConfig
         System.out.println("Call AppConfig.orderService");
 
 //        return new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
+//        return new OrderServiceImpl(memberRepository(), discountPolicy());
+        return null;
     }
 
     @Bean
