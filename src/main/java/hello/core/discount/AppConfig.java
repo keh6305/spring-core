@@ -27,6 +27,7 @@ public class AppConfig
     public MemoryMemberRepository memberRepository()
     {
         System.out.println("Call AppConfig.memberRepository");
+
         return new MemoryMemberRepository();
     }
 

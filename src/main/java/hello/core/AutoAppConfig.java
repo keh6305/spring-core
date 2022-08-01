@@ -19,7 +19,6 @@ import org.springframework.context.annotation.FilterType;
 )
 public class AutoAppConfig
 {
-
     @Autowired
     private MemberRepository memberRepository;
 
@@ -32,9 +31,9 @@ public class AutoAppConfig
 //        return new OrderServiceImpl(memberRepository, discountPolicy);
 //    }
 
-    @Bean(name = "memoryMemberRepository")
-    MemberRepository memberRepository()
-    {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name = "memoryMemberRepository")
+//    MemberRepository memberRepository()
+//    {
+//        return new MemoryMemberRepository();
+//    }
 }
