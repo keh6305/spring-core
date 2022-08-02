@@ -40,12 +40,12 @@ public class OrderServiceImpl implements OrderService
         this.discountPolicy = discountPolicy;
     }
 
-    @Autowired
-    public void init(MemberRepository memberRepository, DiscountPolicy discountPolicy)
-    {
-        memberRepository = memberRepository;
-        discountPolicy = discountPolicy;
-    }
+//    @Autowired
+//    public void init(MemberRepository memberRepository, DiscountPolicy discountPolicy)
+//    {
+//        memberRepository = memberRepository;
+//        discountPolicy = discountPolicy;
+//    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice)
