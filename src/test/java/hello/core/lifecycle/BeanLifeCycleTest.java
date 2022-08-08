@@ -23,7 +23,8 @@ public class BeanLifeCycleTest
     @Configuration
     static class LifeCycleConfig
     {
-        @Bean(initMethod = "init", destroyMethod = "close")
+//        @Bean(initMethod = "init", destroyMethod = "close")     // 초기화, 소멸 메소드 선언
+        @Bean
         public NetworkClient networkClient()
         {
             NetworkClient networkClient = new NetworkClient();

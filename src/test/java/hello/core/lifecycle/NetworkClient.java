@@ -1,5 +1,8 @@
 package hello.core.lifecycle;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 // 인터페이스 사용 초기화, 소멸
 //public class NetworkClient implements InitializingBean, DisposableBean
 public class NetworkClient
@@ -58,6 +61,7 @@ public class NetworkClient
 //    }
 
     // 초기화 메소드
+    @PostConstruct
     public void init()
     {
         System.out.println("NetworkClient.init");
@@ -68,6 +72,7 @@ public class NetworkClient
     }
 
     // 소멸 메소드
+    @PreDestroy
     public void close()
     {
         System.out.println("NetworkClient.close");
