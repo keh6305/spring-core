@@ -23,12 +23,20 @@ public class BeanLifeCycleTest
     @Configuration
     static class LifeCycleConfig
     {
-//        @Bean(initMethod = "init", destroyMethod = "close")     // 초기화, 소멸 메소드 선언
+        // 초기화, 소멸 메소드 선언
+//        @Bean(initMethod = "init", destroyMethod = "close")
+//        public NetworkClient networkClient()
+//        {
+//            NetworkClient networkClient = new NetworkClient();
+//            networkClient.setUrl("http://hello-spring.dev");
+//
+//            return networkClient;
+//        }
+
         @Bean
         public NetworkClient networkClient()
         {
             NetworkClient networkClient = new NetworkClient();
-
             networkClient.setUrl("http://hello-spring.dev");
 
             return networkClient;
