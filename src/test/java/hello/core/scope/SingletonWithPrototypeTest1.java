@@ -20,12 +20,10 @@ public class SingletonWithPrototypeTest1
 
         PrototypeBean prototypeBean1 = ac.getBean(PrototypeBean.class);
         prototypeBean1.addCount();
-
         assertThat(prototypeBean1.getCount()).isEqualTo(1);
 
         PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class);
         prototypeBean1.addCount();
-
         assertThat(prototypeBean2.getCount()).isEqualTo(1);
     }
 
@@ -35,12 +33,10 @@ public class SingletonWithPrototypeTest1
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(ClientBean.class, PrototypeBean.class);
 
         ClientBean clientBean1 = ac.getBean(ClientBean.class);
-
         int count1 = clientBean1.logic();
         assertThat(count1).isEqualTo(1);
 
         ClientBean clientBean2 = ac.getBean(ClientBean.class);
-
         int count2 = clientBean2.logic();
         assertThat(count2).isEqualTo(2);
     }
