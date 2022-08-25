@@ -36,15 +36,26 @@ public class AppConfig
     {
         System.out.println("Call AppConfig.orderService");
 
-//        return new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
         return new OrderServiceImpl(memberRepository(), discountPolicy());
-//        return null;
     }
+
+//    @Bean
+//    public OrderService orderService()
+//    {
+//        System.out.println("Call AppConfig.orderService");
+//
+//        return new OrderServiceImpl(new MemoryMemberRepository(), new FixDiscountPolicy());
+//    }
 
     @Bean
     public DiscountPolicy discountPolicy()
     {
-//        return new FixDiscountPolicy();
         return new RateDiscountPolicy();
     }
+
+//    @Bean
+//    public DiscountPolicy discountPolicy()
+//    {
+//        return new FixDiscountPolicy();
+//    }
 }
