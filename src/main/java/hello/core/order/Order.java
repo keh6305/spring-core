@@ -20,35 +20,43 @@ public class Order
         return itemPrice - discountPrice;
     }
 
-    public Long getMemberId() {
+    public Long getMemberId()
+    {
         return memberId;
     }
 
-    public void setMemberId(Long memberId) {
+    public void setMemberId(Long memberId)
+    {
         this.memberId = memberId;
     }
 
-    public String getItemName() {
+    public String getItemName()
+    {
         return itemName;
     }
 
-    public void setItemName(String itemName) {
+    public void setItemName(String itemName)
+    {
         this.itemName = itemName;
     }
 
-    public int getItemPrice() {
+    public int getItemPrice()
+    {
         return itemPrice;
     }
 
-    public void setItemPrice(int itemPrice) {
+    public void setItemPrice(int itemPrice)
+    {
         this.itemPrice = itemPrice;
     }
 
-    public int getDiscountPrice() {
+    public int getDiscountPrice()
+    {
         return discountPrice;
     }
 
-    public void setDiscountPrice(int discountPrice) {
+    public void setDiscountPrice(int discountPrice)
+    {
         this.discountPrice = discountPrice;
     }
 
